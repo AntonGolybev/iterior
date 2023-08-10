@@ -1,0 +1,33 @@
+
+._interior{
+
+    width: 520px;
+    height: 100vh;
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    background-color: rgba(30, 30, 30, 0.80);
+    
+
+    & > ._interior-title{
+        color: #FFF;
+
+        background-color: rgba(30, 30, 30, 0.86);
+        
+        font-family: 'Inter', sans-serif;
+        font-size: 80px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+
+        padding: 30px 94px 46px 94px;
+
+        box-sizing: border-box;
+    }
+
+
+}
+
