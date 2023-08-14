@@ -22,19 +22,57 @@
         font-weight: 500;
         line-height: normal;
 
+        position: relative;
+
         padding: 30px 94px 46px 94px;
 
         box-sizing: border-box;
+
+        &:after{
+            position: absolute;
+            top: 23px;
+            right: 120px;
+
+            width: 110px;
+            height: 110px;
+
+            content: "";
+
+            background-image: url('../image/interior.svg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 90%;
+
+           
+        }
     }
 
     & > ._interior-filter{
+        display: flex;
+        gap: 188px;
 
         & > ._filter{
-            
+            color: #FFF;
+
+            font-family: 'Inter', sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            margin: 22px 0 0 106px;
         }
 
         & > ._reset-filter{
+            color: #F6F6F6;
 
+            font-family: 'Inter', sans-serif;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+
+            margin: 32px 36px 0 0;
         }
 
 
@@ -69,6 +107,86 @@
         gap: 20px;
     }
 
+    & > ._interior-price{
+        color: #FFF;
+
+        font-family: 'Inte', sans-serif;
+        font-size: 21px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+
+        margin: 70px 0 0 45px;
+    }
 
 }
 
+
+
+
+// <label for="products-checkbox-loundry" class="_interior-checkbox">
+//                     <input type="checkbox" name="products-checkbox" id="products-checkbox-loundry">Loundry(14)
+//                 </label>
+
+
+._interior-checkbox{
+
+    user-select: none;
+
+    color: #FFF;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+
+    padding-left: 63px;
+    
+    position: relative;
+
+    & > input{
+        display: none;
+    }
+
+    &:after{
+        position: absolute;
+        top: 0;
+        left: 0;
+
+        width: 30px;
+        height: 30px;
+
+        content: "";
+
+        border-radius: 3px;
+        border: 2px solid #FFF;
+        background: rgba(181, 181, 181, 0.35);
+    }
+
+    &:has(input:checked):after{
+        background: rgba(255, 195, 139, 0.90);
+        background-image: url('../image/vector.svg');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+
+
+._interior-form-products{
+    max-height: 20vh;
+    overflow-y: auto;
+
+    &:-webkit-scrollbar {
+        width: 10px;
+    }
+    
+    &:-webkit-scrollbar-track {
+        background-color: darkgrey;
+    }
+    
+    &:-webkit-scrollbar-thumb {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+}

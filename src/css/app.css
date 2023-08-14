@@ -14,8 +14,43 @@
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  position: relative;
   padding: 30px 94px 46px 94px;
   box-sizing: border-box;
+}
+._interior > ._interior-title:after {
+  position: absolute;
+  top: 23px;
+  right: 120px;
+  width: 110px;
+  height: 110px;
+  content: "";
+  background-image: url("../image/interior.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 90%;
+}
+._interior > ._interior-filter {
+  display: flex;
+  gap: 188px;
+}
+._interior > ._interior-filter > ._filter {
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 22px 0 0 106px;
+}
+._interior > ._interior-filter > ._reset-filter {
+  color: #F6F6F6;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 32px 36px 0 0;
 }
 ._interior > ._interior-checkbox-title {
   color: #FFF;
@@ -37,6 +72,64 @@
   flex-direction: column;
   margin: 30px 0 0 43px;
   gap: 20px;
+}
+._interior > ._interior-price {
+  color: #FFF;
+  font-family: "Inte", sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin: 70px 0 0 45px;
+}
+
+._interior-checkbox {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  color: #FFF;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  padding-left: 63px;
+  position: relative;
+}
+._interior-checkbox > input {
+  display: none;
+}
+._interior-checkbox:after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  content: "";
+  border-radius: 3px;
+  border: 2px solid #FFF;
+  background: rgba(181, 181, 181, 0.35);
+}
+._interior-checkbox:has(input:checked):after {
+  background: rgba(255, 195, 139, 0.9);
+  background-image: url("../image/vector.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+._interior-form-products {
+  max-height: 20vh;
+  overflow-y: auto;
+}
+._interior-form-products:-webkit-scrollbar {
+  width: 10px;
+}
+._interior-form-products:-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+._interior-form-products:-webkit-scrollbar-thumb {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
 }
 
 *, *:before, *:after {
