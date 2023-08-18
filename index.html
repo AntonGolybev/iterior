@@ -80,6 +80,10 @@
             </form>
             
             <h2 class="_interior-price">Price Range</h2>
+            <div class="slider">
+                <input type="range" min="0" max="1000" value="200" oninput="rangeValue.innerText = this.value">
+                <p id="rangeValue">600</p>
+            </div>
         </section>
     </body>
 </html>
