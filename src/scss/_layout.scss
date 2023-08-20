@@ -1,0 +1,23 @@
+._interior-control{
+    height: calc(100vh - 168px);
+    overflow-y: auto;
+
+    background-color: rgba(30, 30, 30, 0.80);
+
+
+
+    &::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+._interior-nav{
+    width: 1500px;
+    height: 120px;
+
+    border-radius: 10px;
+
+
+    background-color: #F6F6F6;;
+}
+

@@ -11,79 +11,89 @@
         <section class="_interior">
             <h1 class="_interior-title">Interiour</h1>
 
-            <div class="_interior-filter">
-                <p class="_filter">Filter</p>
-                <p class="_reset-filter">Reset Filter</p>
+            <div class="_interior-control">
+                <div class="_interior-filter">
+                    <p class="_filter">Filter</p>
+                    <p class="_reset-filter">Reset Filter</p>
+                </div>
+
+                <h2 class="_interior-checkbox-title">Store</h2>
+
+                <form action="#" class="_interior-form-store">
+
+                    <label for="store-checkbox-ikea" class="_interior-checkbox">
+                        <input type="checkbox" name="store-checkbox" id="store-checkbox-ikea">IKEA
+                    </label>
+
+                    <label for="store-checkbox-americonsignature" class="_interior-checkbox">
+                        <input type="checkbox" name="store-checkbox" id="store-checkbox-americonsignature">Americon Signature
+                    </label>
+
+                    <label for="store-checkbox-iFurnholic" class="_interior-checkbox">
+                        <input type="checkbox" name="store-checkbox" id="store-checkbox-iFurnholic">iFurnholic
+                    </label>
+
+                    <label for="store-checkbox-Informa" class="_interior-checkbox">
+                        <input type="checkbox" name="store-checkbox" id="store-checkbox-Informa">Informa
+                    </label>
+
+                    <label for="store-checkbox-dovesfurniture" class="_interior-checkbox">
+                        <input type="checkbox" name="store-checkbox" id="store-checkbox-dovesfurniture">Dove’s Furniture
+                    </label>
+
+                </form>
+                <h2 class="_interior-checkbox-title">Products</h2>
+
+                <form action="#" class="_interior-form-products">
+
+                    <label for="products-checkbox-furniture" class="_interior-checkbox">
+                        <input type="checkbox" name="products-checkbox" id="products-checkbox-furniture">Furniture(102)
+                    </label>
+
+                    <label for="products-checkbox-workspace" class="_interior-checkbox">
+                        <input type="checkbox" name="products-checkbox" id="products-checkbox-workspace">Workspace(40)
+                    </label>
+
+                    <label for="products-checkbo-kitchen" class="_interior-checkbox">
+                        <input type="checkbox" name="products-checkbox" id="products-checkbo-kitchen">Kitchen(56)
+                    </label>
+
+                    <label for="products-checkbox-plants" class="_interior-checkbox">
+                        <input type="checkbox" name="products-checkbox" id="products-checkbox-plants">Plants(42)
+                    </label>
+
+                    <label for="products-checkbox-bathroom" class="_interior-checkbox">
+                        <input type="checkbox" name="products-checkbox" id="products-checkbox-bathroom">Bathroom(63)
+                    </label>
+
+                    <label for="products-checkbox-storage" class="_interior-checkbox">
+                        <input type="checkbox"  name="products-checkbox" id="products-checkbox-storage">Storage(30)
+                    </label>
+
+                    <label for="products-checkbox-textiles" class="_interior-checkbox">
+                        <input type="checkbox"  name="products-checkbox" id="products-checkbox-textiles">Textiles(55)
+                    </label>
+
+                    <label for="products-checkbox-loundry" class="_interior-checkbox">
+                        <input type="checkbox" name="products-checkbox" id="products-checkbox-loundry">Loundry(14)
+                    </label>
+
+                </form>
+                
+                <h2 class="_interior-price">Price Range</h2>
+                <div class="slider">
+                    <input type="range" min="0" max="1000" value="200" oninput="rangeValue.innerText = this.value">
+                    <p id="rangeValue">600</p>
+                </div>
             </div>
-
-            <h2 class="_interior-checkbox-title">Store</h2>
-
-            <form action="#" class="_interior-form-store">
-
-                <label for="store-checkbox-ikea" class="_interior-checkbox">
-                    <input type="checkbox" name="store-checkbox" id="store-checkbox-ikea">IKEA
-                </label>
-
-                <label for="store-checkbox-americonsignature" class="_interior-checkbox">
-                    <input type="checkbox" name="store-checkbox" id="store-checkbox-americonsignature">Americon Signature
-                </label>
-
-                <label for="store-checkbox-iFurnholic" class="_interior-checkbox">
-                    <input type="checkbox" name="store-checkbox" id="store-checkbox-iFurnholic">iFurnholic
-                </label>
-
-                <label for="store-checkbox-Informa" class="_interior-checkbox">
-                    <input type="checkbox" name="store-checkbox" id="store-checkbox-Informa">Informa
-                </label>
-
-                <label for="store-checkbox-dovesfurniture" class="_interior-checkbox">
-                    <input type="checkbox" name="store-checkbox" id="store-checkbox-dovesfurniture">Dove’s Furniture
-                </label>
-
-            </form>
-            <h2 class="_interior-checkbox-title">Products</h2>
-
-            <form action="#" class="_interior-form-products">
-
-                <label for="products-checkbox-furniture" class="_interior-checkbox">
-                    <input type="checkbox" name="products-checkbox" id="products-checkbox-furniture">Furniture(102)
-                </label>
-
-                <label for="products-checkbox-workspace" class="_interior-checkbox">
-                    <input type="checkbox" name="products-checkbox" id="products-checkbox-workspace">Workspace(40)
-                </label>
-
-                <label for="products-checkbo-kitchen" class="_interior-checkbox">
-                    <input type="checkbox" name="products-checkbox" id="products-checkbo-kitchen">Kitchen(56)
-                </label>
-
-                <label for="products-checkbox-plants" class="_interior-checkbox">
-                    <input type="checkbox" name="products-checkbox" id="products-checkbox-plants">Plants(42)
-                </label>
-
-                <label for="products-checkbox-bathroom" class="_interior-checkbox">
-                    <input type="checkbox" name="products-checkbox" id="products-checkbox-bathroom">Bathroom(63)
-                </label>
-
-                <label for="products-checkbox-storage" class="_interior-checkbox">
-                    <input type="checkbox"  name="products-checkbox" id="products-checkbox-storage">Storage(30)
-                </label>
-
-                <label for="products-checkbox-textiles" class="_interior-checkbox">
-                    <input type="checkbox"  name="products-checkbox" id="products-checkbox-textiles">Textiles(55)
-                </label>
-
-                <label for="products-checkbox-loundry" class="_interior-checkbox">
-                    <input type="checkbox" name="products-checkbox" id="products-checkbox-loundry">Loundry(14)
-                </label>
-
-            </form>
-            
-            <h2 class="_interior-price">Price Range</h2>
-            <div class="slider">
-                <input type="range" min="0" max="1000" value="200" oninput="rangeValue.innerText = this.value">
-                <p id="rangeValue">600</p>
-            </div>
+        </section>
+        <section class="_interior-nav">
+            <nav class="_nav-list">
+                <div class="_nav-button">
+                    <button class="_nav-button-home">Home</button>
+                    <p class="_nav-link-new-items">New Items</p>
+                </div>
+            </nav>
         </section>
     </body>
 </html>
