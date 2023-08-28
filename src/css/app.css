@@ -13,11 +13,14 @@
   position: relative;
   padding: 30px 94px 46px 94px;
   box-sizing: border-box;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 ._interior > ._interior-title:after {
   position: absolute;
   top: 23px;
-  right: 120px;
+  right: 90px;
   width: 110px;
   height: 110px;
   content: "";
@@ -38,6 +41,10 @@
   font-weight: 700;
   line-height: normal;
   margin: 22px 0 0 106px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 ._interior ._interior-filter > ._reset-filter {
   color: #F6F6F6;
@@ -47,6 +54,12 @@
   font-weight: 500;
   line-height: normal;
   margin: 32px 36px 0 0;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 ._interior ._interior-checkbox-title {
   color: #FFF;
@@ -56,6 +69,9 @@
   font-weight: 700;
   line-height: normal;
   margin: 47px 0 0 45px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 ._interior ._interior-form-store {
   display: flex;
@@ -77,6 +93,9 @@
   font-weight: 700;
   line-height: normal;
   margin: 70px 0 0 45px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 
 ._interior-checkbox {
@@ -124,11 +143,14 @@
   border-radius: 20px;
   display: flex;
   align-items: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   margin: 20px auto;
 }
 .slider > input[type=range] {
   -webkit-appearance: none !important;
-  width: 420px;
+  width: 330px;
   height: 2px;
   background-color: rgb(255, 255, 255);
   border: none;
@@ -151,12 +173,17 @@
   height: 30px;
 }
 .slider > .slider-number {
-  color: #FFF;
+  color: #212121;
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  background-color: white;
+  border-radius: 12px;
+  padding: 10px 14px;
+  width: 70px;
+  text-align: center;
 }
 
 ._nav-list > ._nav-button {
@@ -176,6 +203,9 @@
   background: rgba(199, 255, 231, 0.32);
   padding: 5px 30px;
   margin: 30px 0 33px 42px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 ._nav-list > ._nav-button > ._nav-link-new-items {
   color: rgba(0, 0, 0, 0.9);
@@ -184,6 +214,75 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+._nav-list > ._nav-button > ._nav-link-search {
+  position: relative;
+}
+._nav-list > ._nav-button > ._nav-link-search:before {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  content: "";
+  background-image: url("../image/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+._nav-list > ._nav-button > ._nav-link-search > input {
+  width: 450px;
+  height: 50px;
+  color: rgba(0, 0, 0, 0.54);
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-radius: 11px;
+  border: 0px solid rgba(0, 0, 0, 0.8);
+  background: #FFF;
+  padding-left: 60px;
+}
+._nav-list > ._nav-button > ._nav-button-list {
+  position: relative;
+  margin-left: -50px;
+  top: -20px;
+}
+._nav-list > ._nav-button > ._nav-button-list > ._nav-button-list-bell {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  content: "";
+  background-image: url("../image/bell.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+._nav-list > ._nav-button > ._nav-button-list > ._nav-button-list-shopping-bag {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  content: "";
+  background-image: url("../image/shopping-bag.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: 100px;
+}
+._nav-list > ._nav-button > ._nav-button-list > ._nav-button-list-log-in {
+  width: 33px;
+  height: 33px;
+  position: absolute;
+  content: "";
+  background-image: url("../image/log-in.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  left: 200px;
 }
 
 *, *:before, *:after {
@@ -210,6 +309,8 @@ footer, header, nav, section, main {
 
 body {
   line-height: 1;
+  display: flex;
+  flex-direction: row;
 }
 
 ol, ul {
