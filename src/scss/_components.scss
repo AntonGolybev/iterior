@@ -419,14 +419,57 @@
        
         
     }
+    
+}
 
+._interior-special{
     
 
-    
+    & > ._interior-special-title{
+        color: #000;
+        font-family: 'Abel', sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
 
-   
+    & > ._interior-special-list{
 
-    
+        & > ._high-quality{
+
+
+            & > ._high_quality-title{
+
+            }
+
+            & > ._high_quality-par{
+
+            }
+
+            & > ._explore-now{
+
+            }
+        }
+
+        & > ._discount{
+
+            & > ._discount-title{
+
+            }
+
+            & > ._discount-num{
+
+            }
+
+            & > ._discount-par{
+                
+            }
+
+        }
+
+    }
+
 }
 
 
