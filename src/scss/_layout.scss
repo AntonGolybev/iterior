@@ -12,15 +12,21 @@
 }
 
 ._interior-nav{
-    width: 100%;
+    width: 1350px;
     height: 120px;
 
     border-radius: 10px;
 
 
-    background-color: #F6F6F6;;
+    background-color: #F6F6F6;
+
+    margin-left: 20px;
 }
 
 ._Interior{
     flex-direction: column;
+}
+
+._interior-special{
+    
 }

@@ -432,38 +432,104 @@
         font-style: normal;
         font-weight: 400;
         line-height: normal;
+
+        margin: 46px 0 0 50px;
     }
 
     & > ._interior-special-list{
+        display: flex;
+        gap: 17px;
+        margin: 32px 0 0 50px;
 
+        
         & > ._high-quality{
+            width: 700px;
+            height: 300px;
 
+            background-image: url('../image/special-background.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 27px;
+
+            
 
             & > ._high_quality-title{
+                color: #FFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 48px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
 
+                padding: 50px 0 0 35px;
             }
 
             & > ._high_quality-par{
+                color: #FFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
 
+                padding: 11px 0 0 35px;
             }
 
             & > ._explore-now{
+                color: #FFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
 
+                border-radius: 7px;
+                background: rgba(164, 85, 10, 0.90);
+
+                padding: 13px  37px;
+
+                margin: 51px 0 0 35px;
+                
             }
         }
 
         & > ._discount{
+            width: 600px;
+            height: 300px;
+
+            background-image: url('../image/discount-background.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 27px;
+
 
             & > ._discount-title{
-
+                color: #FFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
             }
 
             & > ._discount-num{
-
+                color: #FFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 90px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
             }
 
             & > ._discount-par{
-                
+                color: #FFF;
+                font-family: 'Inter', sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
             }
 
         }
