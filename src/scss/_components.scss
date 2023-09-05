@@ -699,9 +699,27 @@
 
                 
                 margin-left: auto;
-                // padding-left: 270px;
-
+                
                 user-select: none;
+
+                position: relative;
+
+                &::before{
+                    position: absolute;
+
+                    width: 24px;
+                    height: 24px;
+
+                    content: "";
+
+                    left: -37px;
+                    top: 0;
+
+                    background-image: url('../image/discount-check.svg');
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: 100%;
+                }
             }
 
         }
@@ -713,3 +731,31 @@
 
 
 
+// .radio_select{
+//     list-style-type: none;
+//     margin: 0;
+//     padding: 0;
+    
+//     display: flex;
+//     gap: 15px;
+// }
+
+// .radio_select input{
+//     display: none;
+// }
+
+// .radio_select label{
+//     display: block;
+//     padding: 16px 24px;
+//     border-radius: 10px;
+//     border: 1px solid rgba(134, 134, 134, 0.437);
+//     color: rgba(134, 134, 134, 0.437);
+
+//     cursor: pointer;
+//     user-select: none;
+// }
+
+// .radio_select input:checked + label{
+//     border: 1px solid rgba(19, 19, 19, 0.8);
+//     color: rgba(19, 19, 19, 0.8);
+// }
