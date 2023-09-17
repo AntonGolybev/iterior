@@ -19,6 +19,42 @@
     flex-direction: column;
 }
 
-// ._interior-special{
+._interior-grid-list{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+    height: 300px;
+
+    border-radius: 9px;
+    background: rgba(217, 217, 217, 0.50);
+
+    gap: 40px;
+}
+
+
+._interior_control{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    align-items: center;
+
+    ._interior_control__left{
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 23px;
+    }
     
-// }
+    ._interior_control__right{
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-end;
+
+        gap: 35px;
+    }
+}
